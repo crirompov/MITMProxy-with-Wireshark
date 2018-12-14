@@ -34,7 +34,7 @@ echo -e $rojo"AÑADIDAS"
 echo -e $azul"*********************" 
 
 echo -e $rojo"Arrancando MITMProxy"
-xterm -e "SSLKEYLOGFILE='$PWD/.mitmproxy/sslkeylogfile.txt' mitmproxy" &
+xterm -e "SSLKEYLOGFILE='$HOME/.mitmproxy/sslkeylogfile.txt' mitmproxy" &
 echo -e $gris"El archivo 'sslkeylogfile.txt' está en la ruta ~/.mitmproxy/"
 echo -e $gris"* Dicho archivo es necesario para el correcto descrifrado de los paquetes en Wireshark *"
 echo -e $rojo"ARRANCADO"
